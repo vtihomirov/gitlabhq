@@ -342,6 +342,12 @@ Settings.lfs['enabled']      = true if Settings.lfs['enabled'].nil?
 Settings.lfs['storage_path'] = Settings.absolute(Settings.lfs['storage_path'] || File.join(Settings.shared['path'], "lfs-objects"))
 
 #
+# GitUni
+#
+Settings['gituni'] ||= Settingslogic.new({})
+Settings.gituni['url'] ||= '/'
+
+#
 # Uploads
 #
 Settings['uploads'] ||= Settingslogic.new({})

@@ -523,6 +523,9 @@ production: &base
     # is the normal way to deploy Gitaly.
     token:
 
+  gituni:
+    url: ''
+
   #
   # 4. Advanced settings
   # ==========================
