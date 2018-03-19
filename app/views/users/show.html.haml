@@ -12,6 +12,9 @@
   .cover-block.user-cover-block.top-area
     .cover-controls
       - if @user == current_user
+        = link_to "#{Settings.gituni['url']}/auth/gitlab",  class: 'btn btn-gray has-tooltip', title: 'Switch to learner profile', 'aria-label': 'Switch to learner profile' do
+          = icon('sign-in')
+          Switch to learner profile
         = link_to profile_path, class: 'btn btn-gray has-tooltip', title: 'Edit profile', 'aria-label': 'Edit profile' do
           = icon('pencil')
       - elsif current_user
